@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import arrowImg from "../../images/carousel-arrow.svg";
 
-import "./scss/index.scss";
+
 import {
   mediumScreen,
   smallScreen,

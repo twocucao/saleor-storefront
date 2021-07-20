@@ -32,7 +32,7 @@ import NothingFound from "./NothingFound";
 import ProductItem from "./ProductItem";
 import { TypedSearchResults } from "./queries";
 
-import "./scss/index.scss";
+
 
 interface SearchProps extends WrappedComponentProps {
   overlay: OverlayContextInterface;

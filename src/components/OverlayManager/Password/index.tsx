@@ -13,7 +13,7 @@ import {
   PasswordResetRequestForm,
 } from "../..";
 
-import "./scss/index.scss";
+
 
 const Password: React.FC<{ overlay: OverlayContextInterface }> = ({
   overlay,

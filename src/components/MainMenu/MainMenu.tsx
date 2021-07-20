@@ -27,7 +27,7 @@ import {
 } from "..";
 import { NavDropdown } from "./NavDropdown";
 
-import "./scss/index.scss";
+
 import {
   mediumScreen,
   smallScreen,

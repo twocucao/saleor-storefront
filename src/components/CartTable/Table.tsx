@@ -7,7 +7,7 @@ import { commonMessages } from "@temp/intl";
 import CostRow from "./CostRow";
 import ProductRow, { EditableProductRowProps, ILine } from "./ProductRow";
 
-import "./scss/index.scss";
+
 import { smallScreen } from "../../globalStyles/scss/variables.module.scss";
 
 interface TableProps extends EditableProductRowProps {
