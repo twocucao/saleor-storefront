@@ -3,7 +3,7 @@ import * as React from "react";
 import { Message } from "..";
 import { INotificationTemplate } from "./customTypes";
 
-import "./scss/index.module.scss";
+import "./scss/index.scss";
 
 export const NotificationTemplate: React.FC<INotificationTemplate> = ({
   message,

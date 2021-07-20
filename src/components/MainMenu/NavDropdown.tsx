@@ -8,7 +8,7 @@ import { MenuItem } from "@graphql/gqlTypes/MenuItem";
 import { NavLink, OverlayContextInterface } from "..";
 import NavItem from "./NavItem";
 
-import "./scss/index.module.scss";
+import "./scss/index.scss";
 
 interface NavDropdownProps extends MenuItem {
   overlay: OverlayContextInterface;

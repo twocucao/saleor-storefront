@@ -4,7 +4,7 @@ import Select from "react-select";
 // tslint:disable
 import { Props as SelectProps } from "react-select/lib/Select";
 
-import "./scss/index.module.scss";
+import "./scss/index.scss";
 
 type Style = "white" | "grey";
 

@@ -11,7 +11,7 @@ import { Button, Form, TextField } from "../..";
 import { RegisterAccount } from "./gqlTypes/RegisterAccount";
 import { TypedAccountRegisterMutation } from "./queries";
 
-import "./scss/index.module.scss";
+import "./scss/index.scss";
 
 const showSuccessNotification = (
   data: RegisterAccount,

@@ -9,7 +9,7 @@ import { Button, Form, TextField } from "..";
 import { ResetPasswordRequest } from "./gqlTypes/ResetPasswordRequest";
 import { TypedPasswordResetRequestMutation } from "./queries";
 
-import "./scss/index.module.scss";
+import "./scss/index.scss";
 
 const PasswordResetRequestForm: React.FC = () => {
   const intl = useIntl();

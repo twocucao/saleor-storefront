@@ -4,7 +4,7 @@ import { components } from "react-select";
 import { getValueOrEmpty } from "../../core/utils";
 import { SelectField, TextField } from "..";
 
-import "./scss/index.module.scss";
+import "./scss/index.scss";
 
 interface PriceRangeFilterProps {
   from: number;

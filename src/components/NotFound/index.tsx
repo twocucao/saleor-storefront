@@ -7,7 +7,7 @@ import { paths } from "@paths";
 
 import Button from "../Button";
 
-import "./scss/index.module.scss";
+import "./scss/index.scss";
 
 interface NotFoundProps {
   message?: string;

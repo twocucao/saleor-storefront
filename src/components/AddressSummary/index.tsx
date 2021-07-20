@@ -5,7 +5,7 @@ import { commonMessages } from "@temp/intl";
 
 import { FormAddressType } from "./types";
 
-import "./scss/index.module.scss";
+import "./scss/index.scss";
 
 const AddressSummary: React.FC<{
   address?: FormAddressType;

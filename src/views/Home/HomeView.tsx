@@ -7,7 +7,7 @@ import { MetaWrapper } from "../../components";
 import { HomePageProducts } from "./gqlTypes/HomePageProducts";
 import Page from "./Page";
 
-import "./scss/index.module.scss";
+import "./scss/index.scss";
 
 export interface HomeViewProps {
   data: HomePageProducts & { featuredProducts: FeaturedProducts };

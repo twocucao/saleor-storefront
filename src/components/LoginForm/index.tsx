@@ -7,7 +7,7 @@ import { commonMessages } from "@temp/intl";
 
 import { Button, Form, TextField } from "..";
 
-import "./scss/index.module.scss";
+import "./scss/index.scss";
 
 interface ILoginForm {
   hide?: () => void;

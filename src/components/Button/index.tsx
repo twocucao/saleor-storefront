@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import "./scss/index.module.scss";
+import "./scss/index.scss";
 
 type ButtonType = "submit" | "reset" | "button";
 export interface ButtonProps extends React.HTMLProps<HTMLButtonElement> {

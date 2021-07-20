@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import closeImg from "../../images/x.svg";
 
-import "./scss/index.module.scss";
+import "./scss/index.scss";
 
 interface MessageProps {
   title: string;
