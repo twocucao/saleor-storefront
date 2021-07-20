@@ -1,4 +1,4 @@
-@import "../../../globalStyles/scss/variables.scss";
+@import "../../../globalStyles/scss/variables.module";
 
 .menu-dropdown {
   position: relative;
@@ -17,7 +17,7 @@
       right: 0rem!important;
       left: 1rem!important;
     }
-    
+
     &--visible {
       display: block;
       z-index: 2;

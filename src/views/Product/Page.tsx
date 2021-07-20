@@ -20,7 +20,7 @@ import GalleryCarousel from "./GalleryCarousel";
 import OtherProducts from "./Other";
 import { IProps } from "./types";
 
-import { smallScreen } from "../../globalStyles/scss/variables.scss";
+import { smallScreen } from "../../globalStyles/scss/variables.module.scss";
 
 const populateBreadcrumbs = (product: ProductDetails) => [
   {

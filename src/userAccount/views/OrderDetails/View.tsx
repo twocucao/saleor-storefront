@@ -7,7 +7,6 @@ import { Loader } from "@components/atoms";
 import Page from "./Page";
 import { IProps } from "./types";
 
-import "./scss/index.scss";
 
 const View: NextPage<IProps> = ({ query: { token } }) => {
   const { data: order, loading } = useOrderDetails(

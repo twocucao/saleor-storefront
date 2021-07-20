@@ -1,15 +1,15 @@
 import NukaCarousel, { CarouselProps } from "nuka-carousel";
 import * as React from "react";
 import Media from "react-media";
-import ReactSVG from "react-svg";
+import Image from "next/image";
 
 import arrowImg from "../../images/carousel-arrow.svg";
 
-import "./scss/index.scss";
+
 import {
   mediumScreen,
   smallScreen,
-} from "../../globalStyles/scss/variables.scss";
+} from "../../globalStyles/scss/variables.module.scss";
 
 interface CarouselType extends CarouselProps {
   children: React.ReactNode;
@@ -25,7 +25,7 @@ const Carousel: React.FC<CarouselType> = ({ children, ...rest }) => {
           onClick={previousSlide}
           className="carousel__control carousel__control--left"
         >
-          <ReactSVG path={arrowImg} />
+          <Image src={arrowImg} />
         </div>
       ) : null,
     renderCenterRightControls: ({
@@ -39,7 +39,7 @@ const Carousel: React.FC<CarouselType> = ({ children, ...rest }) => {
           onClick={nextSlide}
           className="carousel__control carousel__control--right"
         >
-          <ReactSVG path={arrowImg} />
+          <Image src={arrowImg} />
         </div>
       ) : null,
     ...rest,

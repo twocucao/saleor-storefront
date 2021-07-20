@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FormattedMessage } from "react-intl";
-import ReactSVG from "react-svg";
 
+import Image from "next/image";
 import { OfflinePlaceholder } from "@components/atoms";
 
 import closeImg from "../../../images/x.svg";
@@ -13,7 +13,7 @@ import {
   PasswordResetRequestForm,
 } from "../..";
 
-import "./scss/index.scss";
+
 
 const Password: React.FC<{ overlay: OverlayContextInterface }> = ({
   overlay,
@@ -25,8 +25,8 @@ const Password: React.FC<{ overlay: OverlayContextInterface }> = ({
           <p className="overlay__header-text">
             <FormattedMessage defaultMessage="Reset your password" />
           </p>
-          <ReactSVG
-            path={closeImg}
+          <Image
+            src={closeImg}
             onClick={overlay.hide}
             className="overlay__header__close-icon"
           />

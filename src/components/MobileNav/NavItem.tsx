@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import * as React from "react";
-import ReactSVG from "react-svg";
+import Image from "next/image";
 
 import { MenuItem } from "@graphql/gqlTypes/MenuItem";
 
@@ -36,8 +36,8 @@ const NavItem: React.FC<NavItemProps> = ({
         onClick={hideOverlay}
       />
       {hasSubNavigation && (
-        <ReactSVG
-          path={subcategoriesImg}
+        <Image
+          src={subcategoriesImg}
           className="side-nav__menu-item-more"
           onClick={() => showSubItems(item)}
         />

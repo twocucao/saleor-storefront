@@ -12,7 +12,7 @@ import {
 } from "./customTypes";
 import SelectOptionsList from "./SelectOptionsList";
 
-import "./scss/index.scss";
+
 
 const updateOptions = (
   { label, value }: ISelectItem,

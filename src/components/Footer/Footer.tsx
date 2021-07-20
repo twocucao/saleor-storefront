@@ -4,7 +4,7 @@ import { SOCIAL_MEDIA } from "../../core/config";
 import { SocialMediaIcon } from "..";
 import { Nav, NavProps } from "./Nav";
 
-import "./scss/index.scss";
+
 
 type FooterProps = NavProps;
 

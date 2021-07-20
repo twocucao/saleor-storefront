@@ -1,7 +1,7 @@
 import Link from "next/link";
 import * as React from "react";
 import { FormattedMessage } from "react-intl";
-import ReactSVG from "react-svg";
+import Image from "next/image";
 
 import { paths } from "@paths";
 import { commonMessages } from "@temp/intl";
@@ -10,7 +10,7 @@ import backImg from "../../images/arrow-back.svg";
 import logoImg from "../../images/logo.svg";
 import NavItem, { INavItem } from "./NavItem";
 
-import "./scss/index.scss";
+
 
 interface NavListProps {
   items: INavItem[];
@@ -68,7 +68,7 @@ class NavList extends React.PureComponent<NavListProps, NavListState> {
         {parent ? (
           <li className="side-nav__menu-item side-nav__menu-item-back">
             <span onClick={this.handleGoBack}>
-              <ReactSVG path={backImg} /> {parent.name}
+              <Image src={backImg} /> {parent.name}
             </span>
           </li>
         ) : (
@@ -76,7 +76,7 @@ class NavList extends React.PureComponent<NavListProps, NavListState> {
             <li className="side-nav__menu-item side-nav__menu-item--parent">
               <Link href={paths.home}>
                 <a className="side-nav__menu-item-logo">
-                  <ReactSVG path={logoImg} onClick={hideOverlay} />
+                  <Image src={logoImg} onClick={hideOverlay} />
                 </a>
               </Link>
               <span className="side-nav__menu-item-close">

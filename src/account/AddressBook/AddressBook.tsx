@@ -13,8 +13,6 @@ import { checkoutMessages, commonMessages } from "@temp/intl";
 
 import { ShopContext } from "../../components/ShopProvider/context";
 
-import "./scss/index.scss";
-
 const AddressBook: React.FC<{
   user: User;
 }> = ({ user }) => {
