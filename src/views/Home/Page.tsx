@@ -15,7 +15,7 @@ import {
   HomePageProducts_shop,
 } from "./gqlTypes/HomePageProducts";
 
-import "./scss/index.scss";
+import "./scss/index.module.scss";
 
 const Page: React.FC<{
   categories: HomePageProducts_categories;

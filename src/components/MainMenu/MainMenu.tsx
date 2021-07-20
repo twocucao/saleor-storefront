@@ -27,11 +27,11 @@ import {
 } from "..";
 import { NavDropdown } from "./NavDropdown";
 
-import "./scss/index.scss";
+import "./scss/index.module.scss";
 import {
   mediumScreen,
   smallScreen,
-} from "../../globalStyles/scss/variables.scss";
+} from "../../globalStyles/scss/variables.module.scss";
 
 interface MainMenuProps {
   demoMode: boolean;

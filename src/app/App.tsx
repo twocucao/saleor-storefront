@@ -17,7 +17,6 @@ import {
 import ShopProvider from "../components/ShopProvider";
 import Notifications from "./Notifications";
 
-import "../globalStyles/scss/index.scss";
 
 type AppProps = ShopConfig;
 

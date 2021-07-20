@@ -9,8 +9,8 @@ import { generatePath } from "react-router";
 import { paths } from "@paths";
 import { commonMessages } from "@temp/intl";
 
-import "./scss/index.scss";
-import { smallScreen } from "../../globalStyles/scss/variables.scss";
+import "./scss/index.module.scss";
+import { smallScreen } from "../../globalStyles/scss/variables.module.scss";
 
 export interface Breadcrumb {
   value: string;

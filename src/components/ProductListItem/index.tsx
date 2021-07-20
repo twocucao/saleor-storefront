@@ -6,7 +6,7 @@ import { FeaturedProduct } from "@graphql/gqlTypes/FeaturedProduct";
 
 import { TaxedMoney } from "../../@next/components/containers";
 
-import "./scss/index.scss";
+import "./scss/index.module.scss";
 
 interface ProductListItemProps {
   product: FeaturedProduct;

@@ -1,7 +1,7 @@
 import * as React from "react";
 import ReactSVG from "react-svg";
 
-import "./scss/index.scss";
+import "./scss/index.module.scss";
 
 interface Medium {
   ariaLabel: string;

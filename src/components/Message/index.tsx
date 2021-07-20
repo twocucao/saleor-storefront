@@ -3,7 +3,7 @@ import ReactSVG from "react-svg";
 
 import closeImg from "../../images/x.svg";
 
-import "./scss/index.scss";
+import "./scss/index.module.scss";
 
 interface MessageProps {
   title: string;

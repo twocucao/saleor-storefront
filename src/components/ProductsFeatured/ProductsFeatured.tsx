@@ -7,7 +7,7 @@ import { paths } from "@paths";
 
 import { Carousel, ProductListItem } from "..";
 
-import "./scss/index.scss";
+import "./scss/index.module.scss";
 
 interface ProductsFeaturedProps {
   title: string | undefined;

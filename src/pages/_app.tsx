@@ -18,6 +18,7 @@ import { ServiceWorkerProvider } from "@components/containers";
 import { defaultTheme, GlobalStyle } from "@styles";
 import { NextQueryParamProvider } from "@temp/components";
 import { getSaleorApi, getShopConfig, ShopConfig } from "@utils/ssr";
+import "../globalStyles/scss/index.scss";
 
 import { version } from "../../package.json";
 import { App as StorefrontApp } from "../app";

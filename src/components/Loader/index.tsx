@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import "./scss/index.scss";
+import "./scss/index.module.scss";
 
 const Loader: React.FC<{ full?: boolean }> = ({ full }) => {
   const getHeight = () => {

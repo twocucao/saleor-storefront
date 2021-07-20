@@ -1,4 +1,4 @@
-@import "../../../globalStyles/scss/variables.scss";
+@import "../../../globalStyles/scss/variables.module";
 
 .product-page {
   background-color: $white;
@@ -22,7 +22,7 @@
     &__description {
       width: 100%;
       min-height: $spacer * 10;
-      margin-bottom: $spacer * 9; 
+      margin-bottom: $spacer * 9;
     }
 
     &__info {

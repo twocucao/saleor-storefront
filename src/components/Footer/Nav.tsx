@@ -4,7 +4,7 @@ import { ShopMenusQuery } from "@graphql/gqlTypes/ShopMenusQuery";
 
 import { NavLink } from "..";
 
-import "./scss/index.scss";
+import "./scss/index.module.scss";
 
 export type NavProps = { menu: ShopMenusQuery["footer"] };
 
