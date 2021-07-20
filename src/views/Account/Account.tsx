@@ -15,7 +15,6 @@ import { commonMessages } from "@temp/intl";
 import AddressBook from "../../account/AddressBook/AddressBook";
 import { Breadcrumbs, Loader } from "../../components";
 
-import "./scss/index.scss";
 
 const returnTab: any = (path: string, userDetails) => {
   let tabContent = <></>;

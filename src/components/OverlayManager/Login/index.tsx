@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FormattedMessage } from "react-intl";
-import ReactSVG from "react-svg";
+import Image from "next/image";
 
 import { OfflinePlaceholder } from "@components/atoms";
 
@@ -50,8 +50,8 @@ class Login extends React.Component<
               <p className="overlay__header-text">
                 <FormattedMessage defaultMessage="Saleor account" />
               </p>
-              <ReactSVG
-                path={closeImg}
+              <Image
+                src={closeImg}
                 onClick={hide}
                 className="overlay__header__close-icon"
               />

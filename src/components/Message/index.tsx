@@ -1,5 +1,5 @@
 import * as React from "react";
-import ReactSVG from "react-svg";
+import Image from "next/image";
 
 import closeImg from "../../images/x.svg";
 
@@ -20,8 +20,8 @@ const Message: React.FC<MessageProps> = ({
   <div className={`message message__status-${status}`}>
     <p className="message__title">{title}</p>
     {children ? <div className="message__content">{children}</div> : null}
-    <ReactSVG
-      path={closeImg}
+    <Image
+      src={closeImg}
       className="message__close-icon"
       onClick={onClose}
     />

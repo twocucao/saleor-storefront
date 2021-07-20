@@ -12,7 +12,6 @@ import { STATIC_PAGES } from "../../core/config";
 import { Article_page } from "./gqlTypes/Article";
 import Page from "./Page";
 
-import "./scss/index.scss";
 
 export interface ArticleViewProps {
   params: { slug: string };

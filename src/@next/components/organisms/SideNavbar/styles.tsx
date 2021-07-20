@@ -1,10 +1,10 @@
-import ReactSVG from "react-svg";
 import { css } from "styled-components";
 
 import { NavLink as _NavLink } from "@components/atoms";
 import { styled } from "@styles";
 
 import { NAVBAR_HEIGHT } from "../TopNavbar/styles";
+import Image from "next/image";
 
 const MenuItemStyles = css`
   cursor: pointer;
@@ -16,12 +16,12 @@ const MenuItemStyles = css`
   transition: 300ms;
   height: ${NAVBAR_HEIGHT};
   width: 100%;
+
   ${({ theme }) => `
     border-bottom: 1px solid ${theme.colors.divider};
     font-weight: ${theme.typography.boldFontWeight};
     font-size: ${theme.typography.baseFontSize};
   `}
-
   path {
     transition: 300ms;
   }
@@ -32,7 +32,6 @@ const MenuItemStyles = css`
       color: ${theme.colors.primary};
       background-color: ${theme.colors.hoverLightBackground};
     `}
-
     path {
       fill: ${({ theme }) => theme.colors.primary};
     }
@@ -82,14 +81,22 @@ export const Link = styled.a`
   ${MenuItemStyles};
 `;
 
-export const LogoWrapper = styled(ReactSVG)`
-  line-height: 0;
-
-  svg {
-    width: 30px;
-    height: 30px;
-  }
-`;
+export const LogoWrapper = ({ path }: { path: string }) => {
+  return (
+    <Image
+      src={path}
+      // styles={{ lineHeight: 0 }}
+    />
+  );
+};
+// export const LogoWrapper = styled(ReactSVG)`
+//   line-height: 0;
+//
+//   svg {
+//     width: 30px;
+//     height: 30px;
+//   }
+// `;
 
 export const IconWrapper = styled.span`
   line-height: 1;

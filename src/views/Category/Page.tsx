@@ -18,7 +18,6 @@ import {
 } from "../../components";
 import { Filters, getActiveFilterAttributes } from "./utils";
 
-import "./scss/index.scss";
 
 export interface CategoryData {
   details: CategoryDetails;

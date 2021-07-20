@@ -1,5 +1,5 @@
 import React from "react";
-import ReactSVG from "react-svg";
+import Image from "next/image";
 
 import * as S from "./styles";
 import { IProps } from "./types";
@@ -26,7 +26,7 @@ export const CreditCardIcon: React.FC<IProps> = ({
   return (
     <S.CreditCardIcon>
       {providers.has(creditCardProvider) && (
-        <ReactSVG path={providers.get(creditCardProvider)} />
+        <Image src={providers.get(creditCardProvider)} />
       )}
     </S.CreditCardIcon>
   );

@@ -27,5 +27,5 @@ export const useServiceWorker = ({ timeout = 1000 }) => {
   //   }
   // }, []);
 
-  // return { updateAvailable };
+  return { updateAvailable: false };
 };

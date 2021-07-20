@@ -1,6 +1,7 @@
-import ReactSVG from "react-svg";
+import Image from "next/image";
 
 import { styled } from "@styles";
+
 
 export const Wrapper = styled.section`
   width: 100%;
@@ -26,9 +27,15 @@ export const BorderedWrapper = styled.div`
   background-repeat: repeat-x;
 `;
 
-export const LogoWrapper = styled(ReactSVG)`
-  line-height: 0;
-`;
+
+export const LogoWrapper = ({ path }: { path: string }) => {
+  return (
+    <Image
+      src={path}
+      // styles={{ lineHeight: 0 }}
+    />
+  );
+};
 
 export const LinkList = styled.div`
   display: flex;

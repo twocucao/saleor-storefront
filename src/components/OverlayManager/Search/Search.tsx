@@ -7,7 +7,7 @@ import {
   injectIntl,
   WrappedComponentProps,
 } from "react-intl";
-import ReactSVG from "react-svg";
+import Image from "next/image";
 
 import { OfflinePlaceholder } from "@components/atoms";
 import { paths } from "@paths";
@@ -102,13 +102,13 @@ class Search extends React.Component<SearchProps, SearchState> {
               onChange={evt => this.setState({ search: evt.target.value })}
               value={this.state.search}
               iconLeft={
-                <ReactSVG
-                  path={closeImg}
+                <Image
+                  src={closeImg}
                   onClick={this.props.overlay.hide}
                   className="search__input__close-btn"
                 />
               }
-              iconRight={<ReactSVG path={searchImg} />}
+              iconRight={<Image src={searchImg} />}
               autoFocus
               placeholder={this.props.intl.formatMessage(commonMessages.search)}
               onBlur={this.handleInputBlur}

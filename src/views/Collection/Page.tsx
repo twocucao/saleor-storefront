@@ -18,8 +18,6 @@ import {
 } from "../../components";
 import { getActiveFilterAttributes } from "../Category/utils";
 
-import "../Category/scss/index.scss";
-
 export interface CollectionData {
   details: CollectionDetails;
   attributes: Attribute[];

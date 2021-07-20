@@ -1,10 +1,10 @@
 import { useAuth, useCart } from "@saleor/sdk";
 import classNames from "classnames";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useContext, useEffect, useState } from "react";
 import { FormattedMessage } from "react-intl";
 import Media from "react-media";
-import ReactSVG from "react-svg";
 
 import { DemoBanner } from "@components/atoms";
 import { ShopMenusQuery } from "@graphql/gqlTypes/ShopMenusQuery";
@@ -101,12 +101,12 @@ export const MainMenu: React.FC<MainMenuProps> = ({
                     )
                   }
                 >
-                  <ReactSVG
-                    path={hamburgerImg}
+                  <Image
+                    src={hamburgerImg}
                     className="main-menu__hamburger--icon"
                   />
-                  <ReactSVG
-                    path={hamburgerHoverImg}
+                  <Image
+                    src={hamburgerHoverImg}
                     className="main-menu__hamburger--hover"
                   />
                 </li>
@@ -150,7 +150,7 @@ export const MainMenu: React.FC<MainMenuProps> = ({
                           suffixClass="__rightdown"
                           head={
                             <li className="main-menu__icon main-menu__user--active">
-                              <ReactSVG path={userImg} />
+                              <Image src={userImg} />
                             </li>
                           }
                           content={
@@ -202,7 +202,7 @@ export const MainMenu: React.FC<MainMenuProps> = ({
                             )
                           }
                         >
-                          <ReactSVG path={userImg} />
+                          <Image src={userImg} />
                         </li>
                       )}
                     </>
@@ -216,7 +216,7 @@ export const MainMenu: React.FC<MainMenuProps> = ({
         <div className="main-menu__center">
           <Link href={paths.home}>
             <a>
-              <ReactSVG path={logoImg} />
+              <Image src={logoImg} />
             </a>
           </Link>
         </div>
@@ -233,7 +233,7 @@ export const MainMenu: React.FC<MainMenuProps> = ({
                         <MenuDropdown
                           head={
                             <li className="main-menu__icon main-menu__user--active">
-                              <ReactSVG path={userImg} />
+                              <Image src={userImg} />
                             </li>
                           }
                           content={
@@ -285,7 +285,7 @@ export const MainMenu: React.FC<MainMenuProps> = ({
                             )
                           }
                         >
-                          <ReactSVG path={userImg} />
+                          <Image src={userImg} />
                         </li>
                       )}
                     </>
@@ -301,7 +301,7 @@ export const MainMenu: React.FC<MainMenuProps> = ({
               >
                 {!loading && (
                   <>
-                    <ReactSVG path={cartImg} />
+                    <Image src={cartImg} />
                     {cartItemsQuantity > 0 ? (
                       <span className="main-menu__cart__quantity">
                         {cartItemsQuantity}
@@ -338,7 +338,7 @@ export const MainMenu: React.FC<MainMenuProps> = ({
                   </span>
                 )}
               />
-              <ReactSVG path={searchImg} />
+              <Image src={searchImg} />
             </li>
           </ul>
         </div>

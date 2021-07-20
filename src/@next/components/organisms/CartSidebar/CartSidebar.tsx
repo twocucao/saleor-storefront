@@ -1,7 +1,7 @@
 import { IItems } from "@saleor/sdk/lib/api/Cart/types";
 import React from "react";
 import { FormattedMessage } from "react-intl";
-import ReactSVG from "react-svg";
+import Image from "next/image";
 
 import {
   Button,
@@ -113,7 +113,7 @@ const CartSidebar: React.FC<ICartSidebar> = ({
       testingContext="cartOverlay"
     >
       <S.Wrapper ref={setElementRef()}>
-        <CardHeader divider onHide={hide} prefix={<ReactSVG path={cartImg} />}>
+        <CardHeader divider onHide={hide} prefix={<Image src={cartImg} />}>
           <span>
             <FormattedMessage defaultMessage="My Cart" />
           </span>

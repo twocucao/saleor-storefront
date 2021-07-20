@@ -9,7 +9,6 @@ import { paths } from "@paths";
 
 import { useAccountConfirmMutation } from "./mutations";
 
-import "./scss/index.scss";
 
 export const AccountConfirmView: NextPage = () => {
   const [query] = useQueryParams({

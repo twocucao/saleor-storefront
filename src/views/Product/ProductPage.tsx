@@ -12,7 +12,6 @@ import NetworkStatus from "../../components/NetworkStatus";
 import Page from "./Page";
 import { IProps } from "./types";
 
-import "./scss/index.scss";
 
 const canDisplay = (product?: ProductDetails) =>
   !!product?.name && !!product?.pricing && !!product?.variants;
