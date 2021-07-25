@@ -88,7 +88,7 @@ const AddToCartSection: React.FC<IAddToCartSection> = ({
   const renderErrorMessage = (message: string, testingContextId: string) => (
     <S.ErrorMessage
       data-test="stockErrorMessage"
-      data-testId={testingContextId}
+      data-test-id={testingContextId}
     >
       {message}
     </S.ErrorMessage>

@@ -13,10 +13,16 @@ export const RichTextEditorContent: React.FC<RichTextEditorContentProps> = ({
   const editorHtml = useRef(EditorJSHTML());
   const data = jsonData ? JSON.parse(jsonData) : [];
 
+  let html = "";
+  try {
+    html = editorHtml.current.parse(data).join("");
+  } catch (e) {
+    html = "";
+  }
   return (
     <S.Content
       dangerouslySetInnerHTML={{
-        __html: editorHtml.current.parse(data).join(""),
+        __html: html,
       }}
     />
   );

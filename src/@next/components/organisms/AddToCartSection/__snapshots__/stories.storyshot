@@ -183,17 +183,17 @@ exports[`Storyshots @components/organisms/AddToCartSection default 1`] = `
       className="c2"
     >
       <span>
-        
+
       </span>
-       - 
+       -
       <span>
-        
+
       </span>
     </h4>
     <p
       className="c3"
       data-test="stockErrorMessage"
-      data-testId="notAvailable"
+      data-test-id="notAvailable"
     >
       Not available for purchase
     </p>

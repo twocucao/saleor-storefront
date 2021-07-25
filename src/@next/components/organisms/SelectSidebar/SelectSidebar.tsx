@@ -24,6 +24,7 @@ export const SelectSidebar: React.FC<IProps> = ({
   const { setElementRef } = useHandlerWhenClickedOutside(() => {
     hide();
   });
+  console.log("-ops-->", options);
 
   return (
     <Overlay
