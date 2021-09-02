@@ -5,6 +5,7 @@ import {
 
 import { ITaxedMoney } from "@types";
 
+// @ts-ignore
 import productImage from "./productImage.png";
 
 const ITEM_VARIANT_UNIT_NET_PRICE = 10;
@@ -106,10 +107,12 @@ const ITEM_VARIANT = (id: string): ICheckoutModelLineVariant => ({
     },
     thumbnail: {
       alt: "product image",
+      // @ts-ignore
       url: productImage,
       __typename: "Image",
     },
     thumbnail2x: {
+      // @ts-ignore
       url: productImage,
       __typename: "Image",
     },

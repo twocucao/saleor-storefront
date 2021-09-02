@@ -20,6 +20,7 @@ import GalleryCarousel from "./GalleryCarousel";
 import OtherProducts from "./Other";
 import { IProps } from "./types";
 
+// @ts-ignore
 import { smallScreen } from "../../globalStyles/scss/variables.module.scss";
 
 const populateBreadcrumbs = (product: ProductDetails) => [

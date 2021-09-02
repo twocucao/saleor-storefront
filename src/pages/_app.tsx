@@ -49,6 +49,7 @@ const attachClient = async () => {
 };
 
 if (!ssrMode) {
+  // @ts-ignore
   window.version = version;
   if (process.env.NEXT_PUBLIC_ENABLE_APOLLO_DEVTOOLS === "true") attachClient();
 }

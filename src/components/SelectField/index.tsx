@@ -1,8 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
 import Select from "react-select";
-// tslint:disable
-import { Props as SelectProps } from "react-select/lib/Select";
+import { Props as SelectProps } from "react-select/src/Select";
 
 
 

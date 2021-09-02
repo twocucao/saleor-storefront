@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 // import { register, unregister } from "register-service-worker";
 
 export const useServiceWorker = ({ timeout = 1000 }) => {

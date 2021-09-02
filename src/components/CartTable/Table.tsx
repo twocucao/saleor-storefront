@@ -8,6 +8,7 @@ import CostRow from "./CostRow";
 import ProductRow, { EditableProductRowProps, ILine } from "./ProductRow";
 
 
+// @ts-ignore
 import { smallScreen } from "../../globalStyles/scss/variables.module.scss";
 
 interface TableProps extends EditableProductRowProps {

@@ -28,10 +28,8 @@ import {
 import { NavDropdown } from "./NavDropdown";
 
 
-import {
-  mediumScreen,
-  smallScreen,
-} from "../../globalStyles/scss/variables.module.scss";
+// @ts-ignore
+import { mediumScreen, smallScreen } from "../../globalStyles/scss/variables.module.scss";
 
 interface MainMenuProps {
   demoMode: boolean;
@@ -40,10 +38,10 @@ interface MainMenuProps {
 }
 
 export const MainMenu: React.FC<MainMenuProps> = ({
-  demoMode,
-  menu,
-  loading,
-}) => {
+                                                    demoMode,
+                                                    menu,
+                                                    loading,
+                                                  }) => {
   const overlayContext = useContext(OverlayContext);
   const { user, signOut } = useAuth();
   const { items } = useCart();
@@ -97,7 +95,7 @@ export const MainMenu: React.FC<MainMenuProps> = ({
                     overlayContext.show(
                       OverlayType.sideNav,
                       OverlayTheme.left,
-                      { data: menuItems }
+                      { data: menuItems },
                     )
                   }
                 >
@@ -198,7 +196,7 @@ export const MainMenu: React.FC<MainMenuProps> = ({
                           onClick={() =>
                             overlayContext.show(
                               OverlayType.login,
-                              OverlayTheme.left
+                              OverlayTheme.left,
                             )
                           }
                         >
@@ -281,7 +279,7 @@ export const MainMenu: React.FC<MainMenuProps> = ({
                           onClick={() =>
                             overlayContext.show(
                               OverlayType.login,
-                              OverlayTheme.right
+                              OverlayTheme.right,
                             )
                           }
                         >

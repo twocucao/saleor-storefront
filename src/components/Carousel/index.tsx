@@ -6,10 +6,8 @@ import Image from "next/image";
 import arrowImg from "../../images/carousel-arrow.svg";
 
 
-import {
-  mediumScreen,
-  smallScreen,
-} from "../../globalStyles/scss/variables.module.scss";
+// @ts-ignore
+import { mediumScreen, smallScreen } from "../../globalStyles/scss/variables.module.scss";
 
 interface CarouselType extends CarouselProps {
   children: React.ReactNode;
@@ -29,11 +27,11 @@ const Carousel: React.FC<CarouselType> = ({ children, ...rest }) => {
         </div>
       ) : null,
     renderCenterRightControls: ({
-      nextSlide,
-      currentSlide,
-      slideCount,
-      slidesToShow,
-    }) =>
+                                  nextSlide,
+                                  currentSlide,
+                                  slideCount,
+                                  slidesToShow,
+                                }) =>
       slideCount - slidesToShow !== currentSlide ? (
         <div
           onClick={nextSlide}

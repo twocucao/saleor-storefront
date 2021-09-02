@@ -76,6 +76,7 @@ class PriceRangeFilter extends React.Component<
         onClick={this.handleClick}
       >
         <SelectField
+          // @ts-ignore
           placeholder="Price range"
           menuIsOpen={false}
           components={{ Control }}

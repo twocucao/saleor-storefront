@@ -132,6 +132,7 @@ const AdyenPaymentGateway: React.FC<IProps> = ({
         onError: onAdyenError,
       };
 
+    // @ts-ignore
     const checkout = configuration && new window.AdyenCheckout(configuration);
     const dropinElement = checkout?.create("dropin");
 
@@ -189,6 +190,7 @@ const AdyenPaymentGateway: React.FC<IProps> = ({
         try {
           dropin.handleAction(paymentAction);
         } catch (error) {
+          // @ts-ignore
           onError([new Error(error)]);
         }
       }

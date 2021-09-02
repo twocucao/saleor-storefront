@@ -10,6 +10,7 @@ import { paths } from "@paths";
 import { commonMessages } from "@temp/intl";
 
 
+// @ts-ignore
 import { smallScreen } from "../../globalStyles/scss/variables.module.scss";
 
 export interface Breadcrumb {

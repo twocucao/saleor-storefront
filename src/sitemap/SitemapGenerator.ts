@@ -5,7 +5,7 @@ import path from "path";
 /* eslint-disable-next-line import/no-extraneous-dependencies */
 import { buildSitemapIndex, createSitemap } from "sitemap";
 
-import { chunk } from "../@next/utils/misc";
+import { chunk } from "@utils/misc";
 
 class SitemapGenerator {
   urls: [object?];

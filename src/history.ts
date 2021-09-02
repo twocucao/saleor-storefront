@@ -7,6 +7,7 @@ const history = (() => {
     return {};
   }
   const history = createBrowserHistory();
+  // @ts-ignore
   history.listen((_location, action) => {
     if (["PUSH"].includes(action)) {
       window.scroll({
